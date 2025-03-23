@@ -5,79 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Server Directory</title>
     <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #121212;
-            color: #e0e0e0;
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #000000; /* Deep black for the background */
+    color: #e0e0e0; /* Slightly lighter text for contrast */
+    }
+
+    header {
+    text-align: center;
+    }
+
+    header h1 {
+    color: #4CAF50;
+    margin: 20px 0 0 0; /* Adds spacing above the heading */
+    font-size: 2.5rem;
+    }
+
+    .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Makes cards wider */
+    gap: 1.5rem;
+    max-width: 1200px; /* Increases overall width */
+    margin: 2rem auto;
+    padding: 1rem;
+    }
+
+    .card {
+    background: #121212; /* Deeper black for the cards */
+    border-radius: 12px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6); /* Slightly darker shadow */
+    padding: 1.5rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.8); /* Darker hover shadow */
+    border: 0.2px solid #4CAF50;
+    }
+
+    .card h2 {
+    margin-top: 0;
+    color: #4CAF50;
+    }
+
+    .card p {
+    margin: 0.5rem 0 1rem 0;
         }
-        header {
-            background-color: #1F1F1F;
-            padding: 1.5rem;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
-        header h1 {
-            color: #4CAF50;
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        .container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 1.5rem;
-            max-width: 900px;
-            margin: 2rem auto;
-            padding: 1rem;
-        }
-        .card {
-            background: #1F1F1F;
-            border-radius: 12px;
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
-            padding: 1.5rem;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.6);
-        }
-        .card h2 {
-            margin-top: 0;
-            color: #4CAF50;
-        }
-        .card p {
-            margin: 0.5rem 0 1rem 0;
-        }
-        .card a {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background-color: #4CAF50;
-            color: #121212;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .card a:hover {
-            background-color: #81C784;
-            color: #121212;
-        }
-        footer {
-            text-align: center;
-            margin-top: 2rem;
-            padding: 1rem 0;
-            background: #1F1F1F;
-            color: #757575;
-        }
-        footer p {
-            margin: 0;
-        }
+
+    .card a {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #4CAF50;
+    color: #000000; /* Ensures clear contrast on the black background */
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    }      
+
+    .card a:hover {
+    background-color: #81C784;
+    color: #000000;
+    }
+
+    footer {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 0.2rem 0;
+    background: #121212;
+    color: #757575;
+    }
     </style>
 </head>
 <body>
     <header>
-        <h1>Explore Our Servers</h1>
+        <h1>Welcome To Mint Portal!</h1>
+        <p>Explore our servers!</p>
     </header>
     <div class="container">
         <div class="card">
@@ -102,7 +108,8 @@
         </div>
     </div>
     <footer>
-        <p>&copy; 2025 Mint Networks. All rights reserved.</p>
+        <p>&copy; 2025 Mint Networks. All rights reserved. 
+            mintportal.site</p>
     </footer>
 </body>
 </html>
